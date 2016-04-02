@@ -64,7 +64,7 @@
 
   li:not(:last-child):after {
     color: #ddd;
-    content: " × ";
+    content: " - ";
     font-style: normal;
     padding: 0 2px;
     speak: none;
