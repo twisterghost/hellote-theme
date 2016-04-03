@@ -640,6 +640,16 @@ main {
   float: left;
 }
 
+.pagination-newer-arrow {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.pagination-older-arrow {
+  display: inline-block;
+  margin-left: 15px;
+}
+
 .pagination-older {
   float: right;
   text-align: right;
