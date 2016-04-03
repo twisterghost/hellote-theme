@@ -407,8 +407,10 @@ main > *:last-child {
 }
 
 .site-title {
-  font-size: inherit;
-  margin: 0 34px 0 0;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -431,6 +433,9 @@ main > *:last-child {
 .site-description {
   color: #aaa;
   font-style: italic;
+  padding-top: 15px;
+  width: 100%;
+  text-align: center;
 }
 
 .site-logo + .site-description {
@@ -864,7 +869,6 @@ iframe,
 }
 
 .hljs {
-  background-color: transparent;
   margin: -7px -20px;
   padding: 7px 20px;
 }
@@ -1171,16 +1175,6 @@ iframe,
 @media (min-width: 768px) {
   .container {
     padding: 45px;
-  }
-  .container:after {
-    background-color: rgba(0, 0, 0, 0.02);
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 3px;
-    z-index: 1;
   }
 }
 

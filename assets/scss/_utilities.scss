@@ -6,17 +6,6 @@
 
   @include breakpoint {
     padding: 45px;
-
-    &:after {
-      background-color: rgba(#000, .02);
-      content: "";
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 3px;
-      z-index: 1;
-    }
   }
 }
 

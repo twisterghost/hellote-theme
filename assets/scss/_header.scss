@@ -14,8 +14,10 @@
 }
 
 .site-title {
-  font-size: inherit;
-  margin: 0 34px 0 0;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+  margin: 0;
 
   @include breakpoint {
     margin: 0;
@@ -36,6 +38,9 @@
 .site-description {
   color: #aaa;
   font-style: italic;
+  padding-top: 15px;
+  width: 100%;
+  text-align: center;
 
   .site-logo + & {
     margin-top: 7px;
