@@ -147,11 +147,10 @@
   }
 
   a {
-    border-bottom: 2px solid #ddd;
-    color: #000;
+    color: hsla(210, 50%, 50%, 1);
 
     &:hover {
-      border-bottom-color: #bbb;
+      border-bottom: 1px solid hsla(210, 50%, 50%, 1);
     }
   }
 
