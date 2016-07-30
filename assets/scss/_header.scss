@@ -1,5 +1,12 @@
 .site-header {
   position: relative;
+  background-image: url('http://hellote.com/content/images/2016/07/hellote-hipster-web-1.jpeg');
+  background-size: cover;
+  background-position-y: 50%;
+
+  .container {
+    height: 45vh;
+  }
 
   &:after {
     background-color: rgba(#000, .03);
@@ -13,11 +20,26 @@
   }
 }
 
+.site-header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 2em;
+}
+
 .site-title {
   font-size: 2em;
+  text-shadow: rgba(255,255,255,.1) -1px -1px 1px,rgba(0,0,0,.5) 1px 1px 1px;
   width: 100%;
   text-align: center;
   margin: 0;
+
+  a {
+    color: white;
+  }
 
   @include breakpoint {
     margin: 0;
@@ -36,11 +58,12 @@
 }
 
 .site-description {
-  color: #aaa;
+  color: white;
   font-style: italic;
   padding-top: 15px;
   width: 100%;
   text-align: center;
+  text-shadow: rgba(255,255,255,.1) -1px -1px 1px,rgba(0,0,0,.5) 1px 1px 1px;
 
   .site-logo + & {
     margin-top: 7px;

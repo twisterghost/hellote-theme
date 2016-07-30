@@ -30,6 +30,7 @@
 .site-nav svg {
   height: 14px;
   width: 18px;
+  fill: white;
 }
 
 .site-nav-close {
@@ -61,10 +62,10 @@
   }
 
   a {
-    color: #aaa;
+    color: hsla(0, 0, 100%, .6);
+    font-weight: bold;
     display: block;
     font-size: 12px;
-    font-weight: bold;
     letter-spacing: 1px;
     line-height: 21px;
     padding: 6px 0;
@@ -87,5 +88,5 @@
 }
 
 .site-nav-current a {
-  color: inherit;
+    color: hsla(0, 0, 100%, 1);
 }

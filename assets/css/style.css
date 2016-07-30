@@ -393,6 +393,13 @@ main > *:last-child {
 
 .site-header {
   position: relative;
+  background-image: url("http://hellote.com/content/images/2016/07/hellote-hipster-web-1.jpeg");
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+.site-header .container {
+  height: 45vh;
 }
 
 .site-header:after {
@@ -406,11 +413,26 @@ main > *:last-child {
   z-index: 1;
 }
 
+.site-header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 2em;
+}
+
 .site-title {
   font-size: 2em;
+  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px, rgba(0, 0, 0, 0.5) 1px 1px 1px;
   width: 100%;
   text-align: center;
   margin: 0;
+}
+
+.site-title a {
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -431,11 +453,12 @@ main > *:last-child {
 }
 
 .site-description {
-  color: #aaa;
+  color: white;
   font-style: italic;
   padding-top: 15px;
   width: 100%;
   text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px, rgba(0, 0, 0, 0.5) 1px 1px 1px;
 }
 
 .site-logo + .site-description {
@@ -550,6 +573,7 @@ main {
 .site-nav svg {
   height: 14px;
   width: 18px;
+  fill: white;
 }
 
 .site-nav-close {
@@ -586,10 +610,10 @@ main {
 }
 
 .site-nav-list a {
-  color: #aaa;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
   display: block;
   font-size: 12px;
-  font-weight: bold;
   letter-spacing: 1px;
   line-height: 21px;
   padding: 6px 0;
@@ -613,7 +637,7 @@ main {
 }
 
 .site-nav-current a {
-  color: inherit;
+  color: white;
 }
 
 .pagination {
