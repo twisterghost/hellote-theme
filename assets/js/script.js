@@ -3,6 +3,7 @@
   var html;
   var $siteNav = $('#site-nav');
   var $siteNavToggle = $('.site-nav-toggle');
+  var $siteHeaderContainer = $('.site-header-container');
 
   if (config.footer_links.length > 0) {
     html = '<ul class="x-separated-list">';
@@ -18,6 +19,7 @@
 
   $siteNavToggle.click(function () {
     $siteNav.toggleClass('is-toggled');
+    $siteHeaderContainer.toggleClass('site-header-container--hidden');
   });
 
   $('.post-content').fitVids();

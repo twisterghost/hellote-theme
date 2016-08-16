@@ -400,6 +400,7 @@ main > *:last-child {
 
 .site-header .container {
   height: 45vh;
+  min-height: 290px;
 }
 
 .site-header:after {
@@ -421,6 +422,16 @@ main > *:last-child {
   bottom: 0;
   margin: auto;
   height: 2em;
+}
+
+.site-header-container--hidden {
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .site-header-container--hidden {
+    opacity: 1;
+  }
 }
 
 .site-title {
@@ -517,12 +528,10 @@ html {
 
 body {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
@@ -530,7 +539,6 @@ body {
 
 main {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   min-height: 1px;
@@ -540,7 +548,6 @@ main {
 .site-footer,
 .site-header {
   -webkit-box-flex: 0;
-  -webkit-flex: none;
       -ms-flex: none;
           flex: none;
 }
@@ -1030,7 +1037,6 @@ iframe,
 @media (min-width: 768px) {
   .read-next {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -1045,7 +1051,6 @@ iframe,
   .read-next-newer,
   .read-next-older {
     -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
     min-width: 50%;

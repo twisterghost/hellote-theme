@@ -6,6 +6,7 @@
 
   .container {
     height: 45vh;
+    min-height: 290px;
   }
 
   &:after {
@@ -28,6 +29,14 @@
   bottom: 0;
   margin: auto;
   height: 2em;
+}
+
+.site-header-container--hidden {
+  opacity: 0;
+
+  @include breakpoint {
+    opacity: 1;
+  }
 }
 
 .site-title {
