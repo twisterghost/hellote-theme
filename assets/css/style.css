@@ -224,7 +224,6 @@ th {
 
 body {
   background-color: #fbfbfb;
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 150px);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 150px);
   background-repeat: no-repeat;
   color: #333;
@@ -248,7 +247,6 @@ body {
 a {
   color: #333;
   text-decoration: none;
-  -webkit-transition: border-color .1s, color .1s;
   transition: border-color .1s, color .1s;
 }
 
@@ -393,7 +391,7 @@ main > *:last-child {
 
 .site-header {
   position: relative;
-  background-image: url("https://s3-us-west-2.amazonaws.com/mjb-personal/hellote-hipster-web-1.jpeg");
+  background-image: url("https://s3-us-west-2.amazonaws.com/mjb-personal/hellote-banner-lake.jpg");
   background-size: cover;
   background-position: 50%;
 }
@@ -483,7 +481,6 @@ main > *:last-child {
 }
 
 .site-footer {
-  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.05));
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.05));
   color: #aaa;
   font-size: 14px;
